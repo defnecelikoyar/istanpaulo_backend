@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_24_233906) do
+ActiveRecord::Schema.define(version: 2022_01_25_153832) do
 
   create_table "artworks", force: :cascade do |t|
     t.string "title"
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 2022_01_24_233906) do
   create_table "reviews", force: :cascade do |t|
     t.string "author"
     t.string "review"
+    t.integer "lover_id"
+    t.integer "artwork_id"
   end
 
 end

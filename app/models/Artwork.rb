@@ -1,5 +1,5 @@
 class Artwork < ActiveRecord::Base
-    has_many :reviews,
+    has_many :reviews
     has_many :lovers, through: :reviews
 
     def leave_review(author, review)
