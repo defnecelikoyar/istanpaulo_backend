@@ -2,11 +2,11 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   get "/" do
-    { message: "Good luck with your project!" }.to_json
+    { message: "This is the main page." }.to_json
   end
 
   get "/artworks" do
-    Artwork.all.to_json({include: :artist})
+    Artwork.all.to_json
   end
 
   get "/artworks/:id" do
