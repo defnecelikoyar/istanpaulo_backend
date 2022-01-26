@@ -21,7 +21,7 @@ end
   delete "/lovers/:id" do
   lover = Lover.find(params[:id])
   lover.destroy
-  {message: "Lover deleted"}.to_json
+  {message: "Lover deleted :) "}.to_json
 end
 
 

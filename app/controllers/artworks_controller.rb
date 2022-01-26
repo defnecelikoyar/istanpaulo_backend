@@ -20,6 +20,6 @@ class ArtworksController < ApplicationController
   delete "/artworks/:id" do
     artwork = Artwork.find(params[:id])
     artwork.destroy
-    {message: "Artwork deleted"}.to_json
+    {message: "Artwork deleted :) "}.to_json
   end
 end

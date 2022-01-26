@@ -21,7 +21,7 @@ end
   delete "/reviews/:id" do
   review = Review.find(params[:id])
   review.destroy
-  {message: "Review deleted"}.to_json
+  {message: "Review deleted :) "}.to_json
 end
 
 end
