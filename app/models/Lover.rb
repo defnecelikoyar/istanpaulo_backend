@@ -13,5 +13,6 @@ class Lover < ActiveRecord::Base
         self.reviews.map do |review| 
             review.print_review 
     end
+end
 
 end
