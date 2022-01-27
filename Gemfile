@@ -50,6 +50,7 @@ end
 # These gems will only be used when we are running tests
 group :test do
   gem "database_cleaner", "~> 2.0"
+  gem 'database_cleaner-active_record'
   gem "rack-test", "~> 1.1"
   gem "rspec", "~> 3.10"
   gem "rspec-json_expectations", "~> 2.2"
