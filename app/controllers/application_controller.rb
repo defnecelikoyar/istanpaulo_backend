@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/artworks/:id" do
-    Artwork.find(params[:id].to_json)
+    Artwork.find(params[:id]).to_json
   end
 
   post "/artworks" do
