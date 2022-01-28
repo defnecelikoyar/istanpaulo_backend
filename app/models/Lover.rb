@@ -11,8 +11,7 @@ class Lover < ActiveRecord::Base
 
     def all_reviews
         self.reviews.map do |review| 
-            review.print_review 
+            review.print_review
         end
     end
-
 end
