@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_26_024921) do
+ActiveRecord::Schema.define(version: 2022_01_25_153832) do
 
   create_table "artworks", force: :cascade do |t|
     t.string "title"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2022_01_26_024921) do
     t.integer "date"
     t.string "description"
     t.string "image_url"
-    t.string "era"
   end
 
   create_table "lovers", force: :cascade do |t|
