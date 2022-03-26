@@ -18,14 +18,14 @@ class ArtworksController < ApplicationController
 
   # create an artwork
   post "/artworks" do
-    artwork = Artwork.create(title: params[:title], artist: params[:artist], date: params[:date], description: params[:description], imager_url: params[:imager_url])
+    artwork = Artwork.create(title: params[:title], artist: params[:artist], date: params[:date], description: params[:description], image_url: params[:image_url])
     artwork.to_json
   end
 
   # update an artwork
   patch "/artworks/:id" do
     artwork = Artwork.find(params[:id])
-    artwork.update(title: params[:title], artist: params[:artist], date: params[:date], description: params[:description], imager_url: params[:imager_url]).to_json
+    artwork.update(title: params[:title], artist: params[:artist], date: params[:date], description: params[:description], image_url: params[:image_url]).to_json
   end
 
    # delete an artwork
